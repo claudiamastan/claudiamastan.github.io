@@ -235,3 +235,15 @@ footer
     font-size: 2rem;
 }
 
+#topbtn
+{ 
+    cursor: pointer;
+    border: solid 1px black;
+    background: none;
+    bottom: 20px;
+  right: 30px;
+    border-radius: 50%;
+    padding: .8rem 1rem .8rem 1rem;
+    right: 2rem;
+}
+
