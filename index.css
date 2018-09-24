@@ -3,6 +3,7 @@ html
     font-family: "Nunito", sans-serif;
 }
 
+/*-----------------top part---------------*/
 #name
 {
     font-weight: bold;
@@ -11,15 +12,16 @@ html
 #intro
 {
     text-align: left;
-    padding: 5em 0 0 4em;
-    font-size: 2em;
+    padding: 3.5em 0 0 4em;
+    font-size: 2.5em;
     width: 50%;
 }
 
 nav ul
 {
-    padding: 0 5em 2em 8em;
+    padding: 2rem 5rem 2rem 9.5rem;
     width:10%;
+    font-size: 1.25rem;
 }
 
 nav
@@ -37,6 +39,7 @@ a:hover
     color:gray;
     border: gray;
 }
+
 nav a, nav ul, nav li
 {
     text-align: center;
@@ -54,23 +57,37 @@ nav li a
     margin: .5rem;
 }
 
+/*-------------content part--------------*/
 h1, h2
 {
     padding: 0;
-    margin: 0 0 0 8rem;
+    margin: 0 0 0 10rem;
     width: 10%;
 }
 
 h1
 {
     width: 80%;
+    font-size: 2rem;
 }
 
 .section_content
 {
-    padding:0 0rem 0 22rem;
-    margin-top: -2rem;
+    padding:0 0rem 0 27rem;
+    margin-top: -1rem;
     width: 50%;
+}
+
+.section_content2
+{
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    margin: 0 0 0 10rem;
+}
+
+#about
+{
+    padding: 10em 0 10em 0;
 }
 
 #resume li
@@ -80,15 +97,20 @@ h1
     padding-bottom: 3rem;
 }
 
-.school_details
+#res
 {
-    padding: 0 0 0 10rem;
-    margin: -1.30rem;
+    padding-bottom: 2rem;
 }
 
 .school
 {
     font-weight: bold;
+}
+
+.school_details
+{
+    padding: 0 0 0 10rem;
+    margin: -1.30rem;
 }
 
 .school_location
@@ -102,22 +124,6 @@ h1
     padding: 2rem 0 0 0;
 }
 
-#res
-{
-    padding-bottom: 2rem;
-}
-
-#about
-{
-    padding: 10em 0 10em 0;
-}
-
-#graphics, #contact
-{
-    padding-top: 5em;
-    width: 1200px;
-    height: 1200px;
-}
 
 #course, #skills
 {
@@ -178,3 +184,39 @@ h1
 {
     font-weight: bold;
 }
+
+#graphics, #contact
+{
+    padding-top: 5em;
+}
+
+
+/*------------footer-----------------*/
+
+footer
+{
+    padding: 8rem 0 2rem 8rem ;
+}
+
+#social_links li
+{
+    list-style-type: none;
+    list-style-position: outside;
+    display: inline; 
+    padding-right: 1rem; 
+}
+
+#social_links
+{
+
+    text-align: right;
+    padding-right: 8rem;
+    margin-top: -2rem;
+}
+
+.social a
+{
+    text-decoration: none;
+    font-size: 2rem;
+}
+
