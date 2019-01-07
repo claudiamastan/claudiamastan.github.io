@@ -1,245 +1,162 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset = "utf-8">
         <title>Claudia Mastan</title>
-        <link rel='stylesheet' type='text/css' href='index.css'>
-        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <script src="/index.js"></script>
+         <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!--<h1>Claudia Mastan</h1>-->
-        <!--<img alt="claudia-photo" src ="">-->
-        <div id="intro">
-            <p>
-                Hello! I'm <span id="name">Claudia Mastan</span>, 
-                <br>a computer science student
-                <br>and graphic designer.
-            </p>
-        </div>
-
-        <nav>
-            <ul class ="navbar">
-                <li>
-                    <a href="#about">About</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-                <li>
-                    <a href="#graphics">Graphics</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
+        <nav class="navbar sticky-top navbar-expand-md navbar-light" role="navigation">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-auto"><a class="nav-link scroll-link" href="#home">Home</a></li>
+                    <li class="nav-item mx-auto"><a class="nav-link scroll-link" href="#resume">Resume</a></li>
+                    <li class="nav-item mx-auto"><a class="nav-link scroll-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
 
-        <div class="content" id="about">
-            <h1>About Me</h1>
-            <p id="aboutme" class="section_content">
-                I'm an Computer Science undergraduate going in my senior year at UC Irvine.
-                <!--Prior to transferring to UCI, I graduated with High Honors from Foothill College
-                with A.S in Computer Science.
-                My coursework during college and university has exposed me to an extensive 
-                programming experience.--> 
-                Currently, I have a working knowledge
-                of C++, C, Java, Python, SQL, as well as using VIM in Linux environment. Along the way,
-                I have developed a strong object-oriented background, learned to implement data structures,
-                and applied good coding practices.
-
-                Aside from programming, my other interest is in Graphic Design. 
-                <!-- I'm currently working as a
-                Marketing Assistant in UCI Center for Student Wellness and Health Promotion. Previously, 
-                I was a Graphic Designer at Foothill College's ASFC Design Center.-->
-                From my experience as a Marketing Assistant and a Graphic Designer, I have
-                gained knowledge in digital marketing and social media.
-
-                My passion in computer science and graphic design has aspired me to combine both of them. My goal is to create
-                an efficient working and aesthetically pleasing products. 
-                Right now, I am preparing myself to be a full-stack engineer and delve into UI/UX design.
-            </p>
+        <div class="section" id="home" role="main">
+            <div class="intro">Hello!<br>
+            <span id="intro-line">I'm <span id="name" class="inline">Claudia Mastan</span></span><br>
+            <div id="intro-desc">CS student / Programmer / Visual Designer </div>
+            <div id="more-intro">
+                4th year CS student with experience in front-end development, 
+                <br> an array of programming languages, UI/UX, and graphic design.
+            </div>
+            </div>
         </div>
 
-        <div class="content" id="resume">
-            <h1 id="res">Resume</h1>
-            <h2 class="section_header">Education</h2>
-            <ul id="edu" class="section_content">
-                <li>
-                    2017-current
-                    <div class="school_details">
-                            <span class="school">University of California, Irvine</span>
-                            <br><span class="school_location">Irvine, California</span>
-                        <br>B.S in Computer Science. Expected Graduation: 2019
-                    </div>
-                </li>
-                <li>
-                    2015-2017
-                    <div class="school_details">
-                        <span class="school">Foothill College</span>
-                        <br><span class="school_location">Los Altos, California</span>
-                        <br>A.S in Computer Science. Graduated with High Honors.
-                    </div>
-                </li>
-            </ul> 
+        <div class="section" id="resume">
+            <h1 class="section-header">Resume</h1>
 
-            <h2 class="section_header">Relevant Coursework</h2>
-            <ul id="course" class="section_content"> 
-                <li>Data Structure Implementation & Analysis (C++, Linux, VIM)</li>
-                <li>Principles in System Design (C, Linux, VIM)</li>
-                <li>Computer Architecture/Organization (Assembly, C)</li>
-                <li>Introduction to Data Management (SQL, NoSQL, AsterixDB)</li>
-                <li>Advanced Data Structures & Algorithms in Java</li>
-                <li>Object Oriented Programming in Java</li>
-                <li>Object Oriented Programming in Python</li>
-                <li>Computer Networks</li>
-                <li>Intro to Software Engineering</li>
-            </ul>
-
-            <h2 id="ex" class="section_header">Experience</h2>
-            <ul id="exp" class="section_content">
-                <li>
-                        <div class="work_title">Intern</div>
-                        <div class="work_details">
-                            <span class="work_place">Axxera, Inc</span>
-                            <span class="divd"></span>
-                            <span class="work_location">Irvine, CA</span>
-                            <span class="divd"></span>
-                            <span class="work_length">Oct 2018-present</span>
-                        </div>
-                        <div class="work_desc">
-                                Creates UI design and mockups for an upcoming mobile application<br>
-                                Updates and redesigns spec sheet and supporting documents for company's products.<br>
-                        </div>
+            <div id="edu">
+                <h2 class="section-header-2">Education</h2>
+                <ul class="content list-unstyled" id="schools">
+                    <li class="desc">
+                        <span class="name">University of California, Irvine</span><br>
+                        <span class="period">2017-2019</span> <span class="loc">Irvine, CA</span><br>
+                        B.S in Computer Science. Specialization: Information. Expected Graduation: 2019
                     </li>
-                <li>
-                    <div class="work_title">Marketing Assistant</div>
-                    <div class="work_details">
-                        <span class="work_place">UCI Center for Student Wellness and Health Promotion</span>
-                        <span class="divd"></span>
-                        <span class="work_location">Irvine, CA</span>
-                        <span class="divd"></span>
-                        <span class="work_length">November 2017-Oct 2018</span>
-                    </div>
-                    <div class="work_desc">
-                            Provided support to professional staff in their marketing efforts within the UCI community.<br>
-                            Maintained and updated CSWHP website regularly.<br>
-                            Created marketing and promotional materials for CSWHP events to increase community engagement.
-                    </div>
-                </li>
-                
-                <li>
-                    <div class="work_title">Technical & Operations Intern</div>
-                    <div class="work_details">
-                        <span class="work_place">TAGSI</span>
-                        <span class="divd"></span>
-                        <span class="work_location">Sunnyvale, CA</span>
-                        <span class="divd"></span>
-                        <span class="work_length">Summer 2016</span>
-                    </div>
-                    <div class="work_desc">
-                            Assisted with technical, operations, and marketing for child and senior citizen ride share company.<br>
-                            Tested administrative console and driver/parent apps including documenting bugs and necessary future<br>
-                            improvements, resulted in increased usability and performance of the apps and console.<br>
-                            Managed driver acquisition and onboarding. Prepared and designed presentation materials for driver training.<br>
-                            Conducted marketing for driver recruitment, succesfully attracted new driver applicants.
-                </li>
+                    <li class="desc">
+                        <span class="name">Foothill College</span><br>
+                        <span class="period">2015-2017</span> <span class="loc">Los Altos, CA</span><br>
+                        A.S in Computer Science. Graduated with High Honors.
+                    </li>
+                    
+                </ul>    
+            </div>
 
-                <li>
-                    <div class="work_title">Graphic Designer</div>
-                    <div class="work_details">
-                        <span class="work_place">Foothill College</span>
-                        <span class="divd"></span>
-                        <span class="work_location">Los Altos, CA</span>
-                        <span class="divd"></span>
-                        <span class="work_length">February 2016-June 2017 </span>
-                    </div>
-                    <div class="work_desc">
-                            Provided designing, retouching, and printing services to students, faculties, and departments.<br>
-                            Worked closely with Foothill’s Marketing department to develop print and digital layouts.<br>
-                            Design jobs include creating visual concepts, flyers, booklets, posters for marketing or other purposes.<br>
-                            Maintained computer, printer/scanner and other hardwares used in design production.<br>
-                </li>
-            </ul>
+            <div id="exp">
+                <h2 class="section-header-2">Experience</h2>
+                <div class="content align-self-start" id="workplaces">
+                    <div class="selections">
+                        <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-axxera-tab" data-toggle="pill" href="#pills-axxera" role="tab" aria-controls="pills-axxera" aria-selected="true">Axxera</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-uci-tab" data-toggle="pill" href="#pills-uci" role="tab" aria-controls="pills-uci" aria-selected="false">UCI CSWHP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-tagsi-tab" data-toggle="pill" href="#pills-tagsi" role="tab" aria-controls="pills-tagsi" aria-selected="false">Tagsi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-fh-tab" data-toggle="pill" href="#pills-fh" role="tab" aria-controls="pills-fh" aria-selected="false">Foothill DC</a>
+                            </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-axxera" role="tabpanel" aria-labelledby="pills-axxera-tab">
+                                    <div class="role">Intern</div>
+                                    <div class="company">Axxera, Inc | Oct 2018-present</div>
+                                    Creates UI design and mockups for an upcoming mobile application<br>
+                                    Updates and redesigns spec sheet and supporting documents for company's products.<br>
+                                </div>
+                                <div class="tab-pane fade" id="pills-uci" role="tabpanel" aria-labelledby="pills-uci-tab">
+                                    <div class="role">Marketing Assistant</div>
+                                    <div class="company">UCI Center for Student Wellness and Health Promotion | Nov 2017 - Oct 2018</div>
+                                    Provided support to professional staff in their marketing efforts within the UCI community.<br>
+                                    Maintained and updated CSWHP website regularly.<br>
+                                    Created marketing and promotional materials for CSWHP events to increase community engagement.
+                                </div>
+                                <div class="tab-pane fade" id="pills-tagsi" role="tabpanel" aria-labelledby="pills-tagsi-tab">
+                                    <div class="role">Technical and Operations Intern</div>
+                                    <div class="company">Tagsi, Inc | Summer 2016</div>
+                                    Assisted with technical, operations, and marketing for child and senior citizen ride share company.<br>
+                                    Tested administrative console and driver/parent apps including documenting bugs and necessary future<br>
+                                    improvements, resulted in increased usability and performance of the apps and console.<br>
+                                    Managed driver acquisition and onboarding. Prepared and designed presentation materials for driver training.<br>
+                                    Conducted marketing for driver recruitment, succesfully attracted new driver applicants.
+                                </div>
+                                <div class="tab-pane fade" id="pills-fh" role="tabpanel" aria-labelledby="pills-fh-tab">
+                                    <div class="role">Graphic Designer</div>
+                                    <div class="company">Foothill College | Feb 2016 - June 2017</div>
+                                    Provided designing, retouching, and printing services to students, faculties, and departments.<br>
+                                    Worked closely with Foothill’s Marketing department to develop print and digital layouts.<br>
+                                    Design jobs include creating visual concepts, flyers, booklets, posters for marketing or other purposes.<br>
+                                    Maintained computer, printer/scanner and other hardwares used in design production.<br>
+                                </div>
+                            </div>
 
-            <h2 class="section_header">Skills & Interest</h2>
-            <ul id="skills" class="section_content">
-                <li>
-                    <div class="skill_title">Technical</div>
-                    <div class="skill_list">
-                    C, C++, HTML5, CSS3, Bootstrap, SQL, Java, Python,
-                    <br>Familiarity with Node js and MongoDB,
-                    <br>Adobe Creative Suites (Photoshop, InDesign, Illustrator, After Effects)
                     </div>
-                </li>
-                <li>
-                    <div class="skill_title">Language</div>
-                    <div class="skill_list">
-                    English, Indonesian
+                    <div id="exp-desc">
                     </div>
-                </li>
-                <li>
-                    <div class="skill_title">Interest</div>
-                    <div class="skill_list">
-                    Programming, UI/UX, Web Design/Development, Graphic Design, Art
-                    </div>
-                </li>
-        </div>
-
-        <div id="graphics">
-            <h1>Graphic Works</h1>
-            <div class="section_content2" id="design_work">
-                View my design portfolio <a href="/claudia_mastan_portfolio_112018.pdf" target="blank">here</a>
+                </div>
             </div>
         </div>
 
-        <div id="contact">
-            <h1>Contact</h1>
-            <div class="section_content2">
-                <!--
-                <form>
-                    <label for="client_name">Name</label>
-                    <input type="text" id="client_name" name="client name" placeholder="First Last"> <br>
-
-                    <label for="client_email">Email</label>
-                    <input type="email" id="client_email" name="client email" placeholder="abc@def.com"> <br>
-
-                    <label for="client_email_subject">Subject</label>
-                    <input type="textarea" id="client_email_subject" name="client email client_email_subject" placeholder="Hi!"> <br>
-
-                    <input type="submit" value="Submit">
-                </form>-->
-                <span id="email">Shoot me an email:  <a href="mailto:cmastan@uci.edu" target="blank">cmastan@uci.edu</a></span>
-            </div>
+        <div class="section" id="contact">
+            <h1 class="section-header">Contact</h1>
+            Shoot me an email: <a href="mailto:cmastan@uci.edu">cmastan@uci.edu</a>
         </div>
-
-        <footer>
-            <div class="watermark">
-                © Claudia Mastan 2018
-            </div>
-            <div class="social">
-            <ul id="social_links">
-                <li>
-                    <a href="https://www.linkedin.com/in/claudiamastan/" target="blank" title="linkedin">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/claudiamastan/" target="blank" title="git">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:cmastan@uci.edu" target="blank" title="email">
-                        <i class="far fa-envelope"></i>
-                    </a>
-                        
-                </li>
-            </ul>
-            </div>
-        </footer>
         
     </body>
+
+    <footer class="container">
+        <div class="watermark">
+            © Claudia Mastan 2018
+        </div>
+        <div class="social">
+        <ul id="social" class = "list-inline ml-auto">
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/claudiamastan/" target="blank" title="linkedin">
+                    linkedin
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://github.com/claudiamastan/" target="blank" title="git">
+                    git
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="mailto:cmastan@uci.edu" target="blank" title="email">
+                    email
+                </a>
+                    
+            </li>
+        </ul>
+        </div>
+    </footer>
+        <!-- Optional JavaScript -->
+        <!-- Load React. -->
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- Load our React component. -->
+        <script src="exp.js"></script>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </html>

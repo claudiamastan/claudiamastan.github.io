@@ -1,0 +1,189 @@
+
+%section
+{
+    height: 100%;
+    padding: 130px 100px 130px;
+}
+
+%section-head
+{
+    display: block;
+    font-weight: 500;
+}
+
+%two-column
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+body
+{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.section-header
+{
+    @extend %section-head;
+    font-size: 400%;
+    padding-bottom: 20px;
+}
+
+.section-header-2
+{
+    @extend %section-head;
+    font-size: 200%;
+}
+
+//each section =================
+.section
+{
+    @extend %section;
+}
+
+
+//NAV ==========================
+.navbar
+{
+    .navbar-nav .nav-link:active:focus 
+    {
+        color:black;
+    }
+}
+
+// HOME ========================
+#home
+{
+    font-size: 350%;
+
+    #name
+    {
+        font-weight: bold;
+    }
+
+    .intro
+    {
+        display: block;
+        font-size: 50%;
+
+        #intro-line
+        {
+            font-size: 200%;
+        }
+
+        #intro-desc
+        {
+            font-size: 70%;
+        }
+
+        #more-intro
+        {
+            font-size: 50%;
+            padding-top: 50px;
+        }
+    }
+
+}
+
+// RESUME =========================
+#resume
+{
+    #edu
+    {
+        @extend %two-column;
+
+        @media all and (min-width: 900px)
+        {
+            .desc
+            {
+                padding-left: 90px;
+                padding-bottom: 20px;
+            }
+        }
+
+        .name
+        {
+            font-weight: 500;
+        }
+
+        .loc
+        {
+            font-style: italic;
+        }
+
+        .period
+        {
+            padding-right: 4px;
+        }
+    }
+
+    #exp
+    {
+        @extend %two-column;
+        padding-top: 20px;
+    
+        #workplaces
+        {
+            .role
+            {
+                font-weight: 500;
+                font-size: 170%;
+            }
+
+            .company
+            {
+                padding-bottom: 20px;
+            }
+
+            .nav-link
+            {
+                background: none;
+                color: gray;
+            }
+
+            .nav-link.active
+            {
+                color: black;
+                border-radius: 0%;
+                border-bottom: 1px solid black;
+                text-align: center;
+            }
+
+            
+            
+        }
+
+        @media all and (min-width: 1000px)
+        {
+            #workplaces
+            {
+                padding-left: 75px;
+            }
+        }
+
+        .selections
+        {   
+        }
+    }
+}
+
+// CONTACT =======================
+#contact
+{
+
+}
+
+// FOOTER ========================
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0;
+
+}
+

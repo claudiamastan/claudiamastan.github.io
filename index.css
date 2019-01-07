@@ -1,236 +1,105 @@
-html
-{
-    font-family: "Nunito", sans-serif;
+.section {
+  height: 100%;
+  padding: 130px 100px 130px;
 }
 
-/*-----------------top part---------------*/
-#name
-{
-    font-weight: bold;
+.section-header-2, .section-header {
+  display: block;
+  font-weight: 500;
 }
 
-#intro
-{
-    text-align: left;
-    padding: 3.5em 0 0 4em;
-    font-size: 2.5em;
-    width: 50%;
+#resume #exp, #resume #edu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
 }
 
-.navbar
-{
-    padding: 2rem 5rem 2rem 9.5rem;
-    width:10%;
-    font-size: 1.25rem;
-
-    position: sticky;
-    top:3em;
+body {
+  display: flex;
+  flex-flow: column wrap;
 }
 
-nav
-{
-    padding-bottom: 12em;
+.section-header {
+  font-size: 400%;
+  padding-bottom: 20px;
 }
 
-a
-{
-    color: black;
+.section-header-2 {
+  font-size: 200%;
 }
 
-a:hover
-{
-    color:gray;
-    border: gray;
+.navbar .navbar-nav .nav-link:active:focus {
+  color: black;
 }
 
-nav a, nav ul, nav li
-{
-    text-align: center;
-    list-style-type: none;
-    text-decoration: none;
-    display: inline;
-    
+#home {
+  font-size: 350%;
+}
+#home #name {
+  font-weight: bold;
+}
+#home .intro {
+  display: block;
+  font-size: 50%;
+}
+#home .intro #intro-line {
+  font-size: 200%;
+}
+#home .intro #intro-desc {
+  font-size: 70%;
+}
+#home .intro #more-intro {
+  font-size: 50%;
+  padding-top: 50px;
 }
 
-nav li a
-{
-    border: black solid 1px;
-    border-radius: .5rem;
-    padding: 0.2rem 1rem 0.2rem 1rem;
-    margin: .5rem;
+@media all and (min-width: 900px) {
+  #resume #edu .desc {
+    padding-left: 90px;
+    padding-bottom: 20px;
+  }
+}
+#resume #edu .name {
+  font-weight: 500;
+}
+#resume #edu .loc {
+  font-style: italic;
+}
+#resume #edu .period {
+  padding-right: 4px;
+}
+#resume #exp {
+  padding-top: 20px;
+}
+#resume #exp #workplaces .role {
+  font-weight: 500;
+  font-size: 170%;
+}
+#resume #exp #workplaces .company {
+  padding-bottom: 20px;
+}
+#resume #exp #workplaces .nav-link {
+  background: none;
+  color: gray;
+}
+#resume #exp #workplaces .nav-link.active {
+  color: black;
+  border-radius: 0%;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+@media all and (min-width: 1000px) {
+  #resume #exp #workplaces {
+    padding-left: 75px;
+  }
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px 0;
 }
 
-/*-------------content part--------------*/
-h1, h2
-{
-    padding: 0;
-    margin: 0 0 0 8rem;
-    width: 10%;
-}
-
-h1
-{
-    width: 80%;
-    font-size: 2rem;
-}
-
-.section_content
-{
-    padding: 0 0 0 27rem;
-    margin-top: -1.85rem;
-    width: 50%;
-}
-
-.section_content2
-{
-    font-size: 1.25rem;
-    padding-top: 1rem;
-    margin: 0 0 0 8rem;
-}
-
-#about
-{
-    padding: 10em 0 10em 0;
-}
-
-#aboutme
-{
-    margin-top: -2.3rem;
-}
-
-#resume li
-{
-    text-align: left;
-    list-style-type: none;
-    padding-bottom: 3rem;
-}
-
-#res
-{
-    padding-bottom: 2rem;
-}
-
-.school
-{
-    font-weight: bold;
-}
-
-.school_details
-{
-    padding: 0 0 0 10rem;
-    margin: -1.30rem;
-}
-
-.school_location
-{
-    font-style: italic;
-    font-weight: 300;
-}
-
-.content
-{
-    padding: 2rem 0 0 0;
-}
-
-
-#course, #skills
-{
-    margin: -4em 0 0 0;
-}
-
-#ex, #experience
-{
-    padding-top: 1rem;
-}
-
-#course li
-{
-    padding: 0 0 0.5rem 0;
-    margin: 0;
-}
-
-#resume > ul
-{
-    padding-bottom: 2rem;
-}
-
-.work_title
-{
-    font-weight: bold;
-    letter-spacing: .15rem;
-    text-transform: uppercase;
-}
-
-.work_details
-{
-    font-size: .85rem;
-    padding-top: .35rem;
-}
-
-.work_place,.work_location,.work_length
-{
-    text-decoration: underline;
-    padding-right: .5rem;
-}
-
-/*.divd
-{ 
-    border-left: solid black .75px;
-    margin: 0 .5rem 0 .5rem;
-    font-size: .75rem;
-}*/
-
-.work_desc
-{
-    padding-top: 1rem;
-    font-size: 1rem;
-    width: 130%;
-}
-
-#skills li
-{
-    margin-top: -2rem;
-    width: 130%;
-}
-
-.skill_title
-{
-    font-weight: bold;
-}
-
-#graphics, #contact
-{
-    padding-top: 5em;
-}
-
-
-/*------------footer-----------------*/
-
-footer
-{
-    padding: 8rem 0 2rem 8rem ;
-}
-
-#social_links li
-{
-    list-style-type: none;
-    list-style-position: outside;
-    display: inline; 
-    padding-right: 1rem; 
-}
-
-#social_links
-{
-
-    text-align: right;
-    padding-right: 8rem;
-    margin-top: -2rem;
-}
-
-.social a
-{
-    text-decoration: none;
-    font-size: 2rem;
-}
-
-
+/*# sourceMappingURL=index.css.map */
