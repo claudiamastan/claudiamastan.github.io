@@ -13,6 +13,27 @@ li {  display: inline-block; }
 .up { text-transform: uppercase; }
 .blk { color: black; }
 
+@keyframes appear {
+  from {opacity: 0; }
+  to {opacity: 100;}
+}
+
+@keyframes slide
+{
+  from{ margin-left: -400px;}
+  to{margin: initial;}
+}
+
+.slide
+{
+  animation: slide 2s 1;
+}
+
+.appear
+{
+  animation: appear .5s 1 ease-in;
+}
+
 body 
 {
   font-family: "Roboto Condensed", sans-serif;
@@ -28,6 +49,7 @@ body
 
 aside 
 {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +99,7 @@ article
   justify-content: center;
   align-items: baseline;
   margin: 0 3vw 0 38.5vw;
+  transition: .2s;
 }
 
 .exp
@@ -96,7 +119,8 @@ article
   cursor: pointer;
   color: black;
   background: white;
-  border: none;
+  border: 1px solid white;
+  transition-delay: .2s;
   transition: .5s;
 }
 
@@ -160,7 +184,12 @@ article
   border: 1px solid black;
   border-radius: 5px;
 }
-
+.project:hover
+{
+  margin-top:-3%;
+  margin-bottom: 3%;
+  transition: .3s;
+}
 .project-name
 {
   font-size: 15px;
@@ -177,5 +206,11 @@ article
 .project i
 {
   color: black;
+}
+
+.project i:hover
+{
+  color: gray;
+  scale: 1.1;
 }
 }
