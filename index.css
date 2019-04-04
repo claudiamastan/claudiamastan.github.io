@@ -100,12 +100,13 @@ article
   align-items: baseline;
   margin: 0 3vw 0 38.5vw;
   transition: .2s;
+  height: 100%;
 }
 
 .exp
 {
-  height: 100%;
   background: white;
+  margin-top: 30vw;
   padding: 150px 0 100px 0;
 }
 
