@@ -97,8 +97,10 @@ article
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: baseline;
-  margin: 0 3vw 0 38.5vw;
+  align-items: center;
+  margin: 2vw 0 0 38vw;
+  
+  padding-right: 50px;
   transition: .2s;
   height: 100%;
 }
@@ -106,8 +108,6 @@ article
 .exp
 {
   background: white;
-  margin-top: 30vw;
-  padding: 150px 0 100px 0;
 }
 
 .nav
@@ -175,21 +175,24 @@ article
   flex-wrap: wrap;
   justify-content: flex-start;
   padding-right: 0;
+  margin: 0;
 }
 
 .project
 {
-  width: 30%;
+  height: auto;
+  width: 300px;
   padding: 10px;
-  margin: 5px;
+  margin: 15px;
   border: 1px solid black;
   border-radius: 5px;
 }
 .project:hover
 {
-  margin-top:-3%;
-  margin-bottom: 3%;
+  transform: scale(1.05);
   transition: .3s;
+  transition-timing-function: ease-in;
+  cursor: pointer;
 }
 .project-name
 {
