@@ -98,8 +98,8 @@ article
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2vw 0 0 38vw;
-  
+  margin-left: 38vw;
+  padding-top: 20px;
   padding-right: 50px;
   transition: .2s;
   height: 100%;
