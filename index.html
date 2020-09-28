@@ -6,44 +6,92 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
-        <!--Font Awesome-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="index-mobile.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <!--Bootstrap-->
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+         <!-- Custom CSS -->
+         <link rel="stylesheet" href="index.css">
         <!-- Custom JS-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src = "index.js"></script>
     </head>
-    <body>
-        <div class = "container">
-            <aside class="slide">
-                <div class = "intro">
-                    <p>Hi, I'm</p>
-                    <p class = "name b">Claudia Mastan</p>
-                    <p class = "sum">Software Developer / UI Designer</p>
-                    <div class = "nav">
-                        <code>
-                        <ul>
-                            <li id = "about">About</li>
-                            <li id = "experience">Experience</li>
-                            <li id = "project">Projects</li>
-                            <!-- <li id = "contact">Contact</li> -->
-                        </ul>
-                        </code>
-                    </div>
-                    <div class = "social">
-                        <a href = "http://www.linkedin.com/in/claudiamastan"><i class="fab fa-linkedin"></i></a>
-                        <a href = "http://www.github.com/claudiamastan"><i class="fab fa-github"></i></a>
-                        <a href = "mailto:cmastan@uci.edu"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-            </aside>
-           
-            <article class = "pt-10 pb-10">
-                
-            </article>
+    <body class="container py-5">
+       <head>
+           <title>Claudia Mastan</title>
+       </head>
+       <nav class="container py-3">
+           <h1 class="name bold">Claudia Mastan</h1>
+            <ul>
+                <li><a href="http://www.linkedin.com/in/claudiamastan">LinkedIn</a> / </li>
+                <li><a href="http://www.github.com/claudiamastan">GitHub</a> / </li>
+                <li><a href="/claudia_mastan_resume.pdf">Resume</a> / </li>
+                <li><a href="claudia_mastan_portfolio_112018.pdf">Design Portfolio</a> / </li>
+                <li><a href="mailto:cmastan@uci.edu">cmastan@uci.edu</a></li>
+            </ul>
+            <br>
+            <hr>
+       </nav>
+    
+    <section class="hi container py-3">
+        
+        <h3 class="section-header bold">Hi! <img src="/assets/wave.png" class="icon"></h3>
+        <div class="section-content">
+                I’m Claudia. I like to code and design. My professional interest includes full stack web deveopment and UI/UX design.<br>
+                When I’m not tinkering with code, I like to doodle, cook, or watch movies.<br><br>
+                Currently, I'm actively seeking for a full-time position. Feel free to reach out to me!
         </div>
+    </section>
+
+    <section class="work container py-3">
+        <h3 class="section-header bold">What do I do? <img src="/assets/woman-tipping-hand.png" class="icon"></h3>
+        <div class="section-content">
+                Right now I am working part-time at <a href="http://www.evgateway.com">EvGateway</a> as a Software Developer. I do full stack development with  Node, Ejs, HTML, CSS, and MS SQL. 
+                My responsibilities is not limited to programming --  I also create high quality UI prototypes using Figma and Adobe PS/AI. 
+        </div>
+    </section>
+
+    <section class="exp container py-3">
+        <h3 class="section-header bold">My Background <img src="/assets/female-technologist.png" class="icon"></h3>
+        <div class="section-content">
+                I graduated with Bachelor in Computer Science, specializing in Information, from University of California, Irvine.<br>
+                I developed a strong object-oriented background, learned to implement data structures, and applied good coding practices (clean code, TDD, debugging). 
+                It prepared me to work in data-driven systems. Some of the topics that I learned include database management, information retrieval, and data-mining.
+                <br><br>
+                During my last year at UCI, I was involved in two project-based classes on building a web application. 
+                From these classes I had the chance to work using different technologies (such as Node, MongoDB, Apache, Java, and MySQL) that are used to build the web. 
+                One of the project classes was extended into a research opportunity, where I had the chance to explore more on front-end development.
+                <br><br>
+                While I was still attending school, I worked at <a href="http://www.axxera.com">Axxera, Inc</a> as a UI/Graphic Designer, 
+                where I learned to build UI prototypes for web applications with Figma.
+        </div>
+    </section>
+
+    <section class="projects container py-3">
+        <h3 class="section-header bold">Projects <img src="/assets/sparkles.png" class="icon"></h3>
+        <div class="section-content">
+            <div class="project pb-3">
+                <div class="project-header bold"><a href="">Asulabs</a></div>
+                Asulabs responsive website redesign.     
+            </div>
+            <div class="project pb-3">
+                <div class="project-header bold"><a href="https://docs.google.com/presentation/d/1dzzY5gbWKTcXUrFSpkAcO-Nlbw1qfyT9hOOlGSA2xnM/edit?usp=sharing">KnoCap</a></div>
+                A voice notes web application that is specifically intended to be used meetings. 
+                Allow users to capture conversation that occurred within the past 60 sec, 30 sec, or to record ongoing conversation. 
+                Users can then view the recorded clips along with transcriptions from the website. 
+                Application can be paired with Alexa to enable users to use Echo buttons to record.    
+            </div>
+            <div class="project pb-3">
+                <div class="project-header bold"><a href="https://morning-dusk-12063.herokuapp.com/">Fabflix</a></div>
+                A movie database web application. Implemented functionalities such as login, browsing, searching, sorting, and purchasing (shopping cart with checkout).
+            </div>
+            <div class="project">
+                <div class="project-header bold"><a href="https://docs.google.com/presentation/d/1MLzRLEG_dvUK-aRHuQCifdHSrKVTMsSSstWbAlVr3hA/edit?usp=sharing">Project Uno</a></div>
+                Built a prototype of one-handed video game controller designed for people with limited mobility on one hand. 
+                The prototype was intended to be used for PC games. Built on Arduino and used joystick, gyroscope, and buttons as its components to replicate function of a mouse.
+                Worked on functional testing for each component. 
+            </div>
+        </div>
+    </section>
     </body>
 </html>
